@@ -1,0 +1,62 @@
+# ===================
+# Maven
+# ===================
+target/
+!.mvn/wrapper/maven-wrapper.jar
+.mvn/wrapper/maven-wrapper.properties
+
+# ===================
+# Logs
+# ===================
+*.log
+*.log.*
+
+# ===================
+# OS Files
+# ===================
+.DS_Store
+Thumbs.db
+
+# ===================
+# IDEs
+# ===================
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+out/
+
+# Eclipse / Spring Tool Suite (STS)
+.apt_generated/
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache
+
+# VS Code
+.vscode/
+
+# NetBeans
+/nbproject/private/
+/nbbuild/  
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# ===================
+# Build Files
+# ===================
+*.class
+*.jar
+*.war
+*.ear
+
+# ===================
+# Temporary Files
+# ===================
+*.swp
+*~
+
