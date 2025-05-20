@@ -37,3 +37,7 @@ A simple Spring Boot REST API to manage employee payroll data.
 - Replaced in-memory list with real database
 - Fully tested via Postman
 
+### UC5 - Get Employee By ID ✅
+- New endpoint: `GET /employee/{id}`
+- Retrieves employee details by ID from the database.
+- If ID not found, returns a 404-style error response.

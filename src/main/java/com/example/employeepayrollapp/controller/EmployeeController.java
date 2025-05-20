@@ -4,6 +4,7 @@ import com.example.employeepayrollapp.dto.EmployeeDTO;
 import com.example.employeepayrollapp.model.Employee;
 import com.example.employeepayrollapp.service.IEmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -28,6 +29,12 @@ public class EmployeeController {
     @GetMapping("/getAll")
     public List<Employee> getAllEmployees() {
         return employeeService.getAllEmployees();
+    }
+
+    @GetMapping("/{id}")
+    public ResponseEntity<Employee> getEmployeeById(@PathVariable int id) {
+        Employee employee = employeeService.getEmployeeById(id);
+        return ResponseEntity.ok(employee);
     }
 
     @PutMapping("/update/{id}")

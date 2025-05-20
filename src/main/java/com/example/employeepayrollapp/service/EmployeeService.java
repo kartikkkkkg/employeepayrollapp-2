@@ -43,4 +43,10 @@ public class EmployeeService implements IEmployeeService {
         employeeRepository.deleteById(id);
         return "Deleted employee with ID: " + id;
     }
+    @Override
+    public Employee getEmployeeById(int id) {
+        return employeeRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("Employee not found with ID: " + id));
+    }
+
 }
