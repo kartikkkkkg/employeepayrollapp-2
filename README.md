@@ -19,3 +19,11 @@ A simple Spring Boot REST API to manage employee payroll data.
 - Stored data in in-memory list
 - Tested using Postman
 
+---
+
+## ✅ UC3 - Service Layer and Architecture
+- Created `service` package with interface and implementation
+- Moved all logic from controller to `EmployeeService`
+- Controller now only handles HTTP, calls service layer
+- Follows clean layered architecture: Controller → Service → Model
+
