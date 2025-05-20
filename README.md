@@ -27,3 +27,13 @@ A simple Spring Boot REST API to manage employee payroll data.
 - Controller now only handles HTTP, calls service layer
 - Follows clean layered architecture: Controller → Service → Model
 
+---
+
+## ✅ UC4 - Database Integration (MySQL + JPA)
+- Added MySQL + JPA dependencies
+- Configured `application.properties`
+- Annotated `Employee` with `@Entity`
+- Created `EmployeeRepository` interface
+- Replaced in-memory list with real database
+- Fully tested via Postman
+
